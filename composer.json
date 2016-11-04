@@ -1,0 +1,33 @@
+{
+  "name": "zhunik/rocket-test",
+  "description": "Show NOTAM info for provided ICAO code with RocketRoute API & Google Maps",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yura Zhunkivskyi",
+      "email": "zhunik@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "vlucas/phpdotenv": "^2.4",
+    "monolog/monolog": "^1.21",
+    "silex/silex": "~2.0",
+    "twig/twig": "^1.27",
+    "symfony/twig-bridge": "^3.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rocket\\": "app/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=vendor/ -n -s ."
+    ]
+  }
+}

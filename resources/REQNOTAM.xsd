@@ -1,0 +1,29 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="REQNOTAM">
+            <xs:complexType>
+                  <xs:sequence>
+                        <xs:element type="xs:byte" name="RESULT"/>
+                        <xs:element name="NOTAMSET">
+                              <xs:complexType>
+                                    <xs:sequence>
+                                          <xs:element name="NOTAM" maxOccurs="unbounded" minOccurs="0">
+                                                <xs:complexType>
+                                                      <xs:sequence>
+                                                            <xs:element type="xs:string" name="ItemQ"/>
+                                                            <xs:element type="xs:string" name="ItemA"/>
+                                                            <xs:element type="xs:int" name="ItemB"/>
+                                                            <xs:element type="xs:string" name="ItemC"/>
+                                                            <xs:element type="xs:string" name="ItemD"/>
+                                                            <xs:element type="xs:string" name="ItemE"/>
+                                                      </xs:sequence>
+                                                      <xs:attribute type="xs:string" name="id" use="optional"/>
+                                                </xs:complexType>
+                                          </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="ICAO"/>
+                              </xs:complexType>
+                        </xs:element>
+                  </xs:sequence>
+            </xs:complexType>
+      </xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+# IDE
+.idea
+
+# Composer
+vendor/
+
+# Config file
+.env
+!.env.example
+
+# App
+
+logs/
+!logs/.gitkeep

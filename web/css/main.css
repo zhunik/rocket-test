@@ -1,0 +1,11 @@
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+body {
+    padding-top: 30px;
+}
+.starter-template {
+    padding: 0px 0px 20px 0px
+}
