@@ -16,7 +16,9 @@
     "silex/silex": "~2.0",
     "twig/twig": "^1.27",
     "symfony/twig-bridge": "^3.1",
-    "ext-soap": "*"
+    "ext-soap": "*",
+    "symfony/validator": "^3.1",
+    "symfony/security-csrf": "^3.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
