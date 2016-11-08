@@ -6,6 +6,7 @@
         <div class="starter-template">
             <h1>NOTAM location by ICAO codes</h1>
             <form id="icaoForm" method="post" class="form-inline">
+                <input type="hidden" name="token" value="{{ token }}">
                 <div class="form-group">
                     <label for="icaoCode">ICAO code</label>
                     <input type="text" maxlength="4" minlength="4" pattern="[A-Z]{4}" class="form-control" id="icaoCode" name="icao" placeholder="ICAO" required>
